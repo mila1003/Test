@@ -14,10 +14,10 @@ namespace UnitTestProject1
         {
             // Surely no one writes tests such way
 
-            var chromeOptions = new ChromeOptions();
-            chromeOptions.AddArguments("headless");
-            chromeOptions.AddArguments("--no-sandbox");
-            var driver = new ChromeDriver(chromeOptions);
+            ///var chromeOptions = new ChromeOptions();
+            ///chromeOptions.AddArguments("headless");
+            ///chromeOptions.AddArguments("--no-sandbox");
+            var driver = new ChromeDriver(/*chromeOptions*/);
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.Zero;
             driver.Url = "https://www.tut.by/";
 
